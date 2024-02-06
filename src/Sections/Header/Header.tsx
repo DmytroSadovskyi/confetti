@@ -10,8 +10,8 @@ const Header = () => {
 
   const handleToggleMenu = () => {
     setIsOpen(prev => !prev);
-    const body = document.body;
-    body.classList.toggle('menu-open');
+    const htmlElement = document.documentElement;
+    isOpen ? (htmlElement.style.overflow = 'auto') : (htmlElement.style.overflow = 'hidden');
   };
 
   useEffect(() => {

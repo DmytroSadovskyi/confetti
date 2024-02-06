@@ -31,7 +31,6 @@ const BurgerMenu = ({ onClose }: Props) => {
   const scrollToSection = (sectionId: string) => {
     const targetElement = document.getElementById(sectionId);
     const header = document.getElementsByTagName('header')[0];
-    console.log(header);
     const headerHight = header.getBoundingClientRect().height;
 
     if (targetElement) {
