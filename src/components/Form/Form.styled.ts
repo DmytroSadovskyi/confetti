@@ -97,14 +97,12 @@ export const InputWrapper = styled.div<InputProps>`
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  margin-bottom: ${(props) => (props.$hasError ? "0" : "24px")};
-  @media screen and (min-width: 768px) {
-    margin-bottom: ${(props) => (props.$hasError ? "0" : "32px")};
-  }
+  height: 116px;
 `;
 
 export const Label = styled.label`
+  display: block;
+  margin-bottom: 8px;
   margin-left: 24px;
   color: #949494;
   font-family: Inter, sans-serif;
@@ -142,11 +140,7 @@ export const Input = styled.input<InputProps>`
   }
 `;
 
-export const TextareaWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-`;
+export const TextareaWrapper = styled.div``;
 
 export const Textarea = styled.textarea`
   height: 128px;
@@ -218,6 +212,7 @@ export const FormButton = styled.button`
 
 export const ErrorMessage = styled.span`
   margin-right: 24px;
+  margin-top: 8px;
   color: var(--accent-color);
   text-align: right;
   font-family: Inter, sans-serif;
