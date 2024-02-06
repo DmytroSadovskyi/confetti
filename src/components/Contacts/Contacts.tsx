@@ -1,3 +1,5 @@
+import MailIcon from "../../assets/icons/sms.svg?react";
+import PhoneIcon from "../../assets/icons/call.svg?react";
 import Container from "../Container";
 import Form from "../Form";
 import {
@@ -10,6 +12,7 @@ import {
   Email,
   SecondWrapper,
 } from "./Contacts.styled";
+
 const Contacts = () => {
   return (
     <ContactsSection id="contacts">
@@ -20,9 +23,12 @@ const Contacts = () => {
             <AddressText>
               Confetti - Studio Dekoracij Balonami Warszawa
             </AddressText>
-            <Phone href="tel:+48793351407">+48 793 351 407</Phone>
+            <Phone href="tel:+48793351407">
+              {" "}
+              <PhoneIcon aria-label="phone-icon" /> +48 793 351 407
+            </Phone>
             <Email href="mailto:confettibalony@gmail.com">
-              confettibalony@gmail.com
+              <MailIcon aria-label="mail-icon" /> confettibalony@gmail.com
             </Email>
           </FirstWrapper>
           <SecondWrapper>

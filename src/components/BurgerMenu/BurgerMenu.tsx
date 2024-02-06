@@ -29,14 +29,13 @@ const BurgerMenu = ({ onClose }: Props) => {
   const scrollToSection = (sectionId: string) => {
     const targetElement = document.getElementById(sectionId);
     if (targetElement) {
-      // Close the menu first
       onClose();
 
       const targetOffset =
         targetElement.getBoundingClientRect().top + window.scrollY;
       const currentScroll = window.scrollY;
       const distance = targetOffset - currentScroll;
-      const duration = 500; // Adjust the duration as needed
+      const duration = 500;
 
       const startTime = performance.now();
 

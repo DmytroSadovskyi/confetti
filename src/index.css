@@ -33,7 +33,7 @@ body {
 }
 
 body.menu-open {
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 h1,

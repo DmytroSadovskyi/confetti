@@ -51,7 +51,7 @@ export const MenuButton = styled.button<MenuButtonProps>`
   color: inherit;
   border: none;
   margin-left: ${(props) => (props.$scrolled ? "auto" : "0")};
-  transition: color 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: color 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
 
   & span {
     font-size: 24px;

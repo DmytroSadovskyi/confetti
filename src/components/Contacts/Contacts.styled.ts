@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import MailIcon from "../../assets/icons/sms.svg";
-import PhoneIcon from "../../assets/icons/call.svg";
 
 export const ContactsSection = styled.section`
   margin-top: 80px;
@@ -91,6 +89,7 @@ export const AddressText = styled.p`
 `;
 
 export const Phone = styled.a`
+  position: relative;
   margin-top: 24px;
   display: flex;
   gap: 8px;
@@ -106,23 +105,11 @@ export const Phone = styled.a`
   letter-spacing: -0.2px;
   text-decoration: none;
 
-  transition: color 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: color 1000ms cubic-bezier(0.075, 0.82, 0.165, 1);
 
   &:hover,
   &:focus {
     color: var(--accent-color);
-  }
-
-  &::before {
-    content: "";
-    background-image: url(${PhoneIcon});
-    width: 24px;
-    height: 24px;
-
-    &:hover,
-    &:focus {
-      stroke: var(--accent-color);
-    }
   }
 
   @media screen and (min-width: 768px) {
@@ -137,6 +124,7 @@ export const Phone = styled.a`
 `;
 
 export const Email = styled.a`
+  position: relative;
   margin-top: 16px;
   display: flex;
   gap: 8px;
@@ -151,22 +139,11 @@ export const Email = styled.a`
   line-height: normal;
   letter-spacing: -0.2px;
   text-decoration: none;
-  transition: color 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: color 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
 
   &:hover,
   &:focus {
     color: var(--accent-color);
-
-    &::before {
-      stroke: var(--accent-color);
-    }
-  }
-
-  &::before {
-    content: "";
-    background-image: url(${MailIcon});
-    width: 24px;
-    height: 24px;
   }
 
   @media screen and (min-width: 768px) {
