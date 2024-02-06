@@ -1,9 +1,9 @@
-import About from "./components/About";
-import Contacts from "./components/Contacts";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import Reviews from "./components/Reviews";
+import About from './Sections/About';
+import Contacts from './Sections/Contacts';
+import Footer from './Sections/Footer';
+import Header from './Sections/Header';
+import Hero from './Sections/Hero';
+import Reviews from './Sections/Reviews';
 
 const App = () => {
   return (

@@ -1,7 +1,7 @@
 import MailIcon from '../../assets/icons/sms.svg?react';
 import PhoneIcon from '../../assets/icons/call.svg?react';
-import Container from '../Container';
-import Form from '../Form';
+import Container from '../../components/Container';
+import Form from '../../components/Form';
 import {
   ContactsSection,
   ContactsWrapper,

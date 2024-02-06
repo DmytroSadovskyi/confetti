@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 
-import Container from '../Container';
-import AboutSlider from '../AboutSlider';
-import AboutList from '../AboutList';
+import Container from '../../components/Container';
+import AboutSlider from '../../components/AboutSlider';
+import AboutList from '../../components/AboutList';
 import { AboutSection, MainWrapper, TextWrapper, AboutTitle, AboutText } from './About.styled';
 
 const About = () => {

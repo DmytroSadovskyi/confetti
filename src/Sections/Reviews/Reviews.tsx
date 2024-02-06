@@ -1,5 +1,5 @@
-import ReviewsSlider from '../ReviewsSlider';
-import Container from '../Container';
+import ReviewsSlider from '../../components/ReviewsSlider';
+import Container from '../../components/Container';
 import { ReviewsSection, ReviewsSectionTitle } from './Reviews.styled';
 
 const Reviews = () => {

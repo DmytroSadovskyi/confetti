@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import MenuIcon from '../../assets/icons/category.svg?react';
 import LogoIcon from '../../assets/icons/Logo.svg?react';
-import BurgerMenu from '../BurgerMenu';
+import BurgerMenu from '../../components/BurgerMenu';
 import { PageHeader, HeaderContainer, Wrapper, Logo, MenuButton } from './Header.styled';
 
 const Header = () => {

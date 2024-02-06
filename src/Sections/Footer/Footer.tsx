@@ -1,5 +1,5 @@
 import LogoIcon from '../../assets/icons/Logo.svg?react';
-import Container from '../Container';
+import Container from '../../components/Container';
 import { FooterWrapper, Copyright } from './Footer.styled';
 
 const Footer = () => {

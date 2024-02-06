@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import RightBalloon from "../../assets/images/there-are-bunch-pink-balloons-floating-air-generative-ai2.png";
-import LeftBalloon from "../../assets/images/there-are-bunch-pink-balloons-floating-air-generative-ai3.png";
+import styled from 'styled-components';
+import RightBalloon from '../../assets/images/there-are-bunch-pink-balloons-floating-air-generative-ai2.png';
+import LeftBalloon from '../../assets/images/there-are-bunch-pink-balloons-floating-air-generative-ai3.png';
 
 interface InputProps {
   $hasError: boolean;
@@ -120,7 +120,7 @@ export const Input = styled.input<InputProps>`
   border-radius: 9px;
   border: 1px solid #d2d2d2;
   background: #fff;
-  color: ${(props) => (props.$hasError ? "var(--accent-color)" : "#222")};
+  color: ${props => (props.$hasError ? 'var(--accent-color)' : '#222')};
 
   font-family: Inter, sans-serif;
   font-size: 20px;
