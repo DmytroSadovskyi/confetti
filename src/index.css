@@ -77,3 +77,7 @@ address {
   position: static;
   margin-top: 36px;
 }
+
+.slick-dots li button:before {
+  font-size: 15px;
+}
