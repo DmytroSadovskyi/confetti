@@ -11,27 +11,37 @@ import {
 } from "./Header.styled";
 
 const Header = () => {
+  const body = document.body;
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const handleOpen = () => setIsOpen(true);
-  const handleClose = () => setIsOpen(false);
+
+  const handleOpen = () => {
+    setIsOpen(true);
+
+    body.classList.add("menu-open");
+  };
+  const handleClose = () => {
+    setIsOpen(false);
+    body.classList.remove("menu-open");
+  };
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      const currentScrollPos = window.scrollY;
+      const isHeaderScrolled = currentScrollPos > 0;
+
+      setIsScrolled(isHeaderScrolled);
     };
+
     window.addEventListener("scroll", handleScroll);
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return (
-    <PageHeader>
+    <PageHeader $scrolled={isScrolled.toString()}>
       <HeaderContainer>
         <Wrapper>
           {!isScrolled && (

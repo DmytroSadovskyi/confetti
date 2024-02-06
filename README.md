@@ -1,4 +1,4 @@
-### Confetti
+# Confetti
 
 Welcome to Confetti, your go-to destination for unique and exceptional balloon decorations that elevate your special events to extraordinary heights.
 
@@ -6,13 +6,13 @@ Welcome to Confetti, your go-to destination for unique and exceptional balloon d
 
 Our distinctive header features a captivating logo and a convenient burger menu. Click on the burger icon to reveal a menu with quick links to specific sections of the page:
 
-# Home: The welcome section.
+### Home: The welcome section.
 
-# About Us: Discover the story behind Confetti.
+### About Us: Discover the story behind Confetti.
 
-# Reviews: Explore heartwarming testimonials from our clients.
+### Reviews: Explore heartwarming testimonials from our clients.
 
-# Contacts: Connect with us for inquiries, custom orders, or just to say hello.
+### Contacts: Connect with us for inquiries, custom orders, or just to say hello.
 
 ## Features
 
@@ -31,8 +31,12 @@ Open http://localhost:3000 in your browser.
 
 ## Technologies Used
 
-Vite.js: Ensures fast loading times.
-Type Script: Enhances code quality, providing static typing for a more robust application.
-Styled-components: Styles and designs the website for a visually appealing look.
-React-Slick: Dynamically presents balloon decorations with a powerful slider component.
-React--hot-toast: Integrates informative and visually appealing notifications for an enhanced user experience.
+### Vite.js: Ensures fast loading times.
+
+### Type Script: Enhances code quality, providing static typing for a more robust application.
+
+### Styled-components: Styles and designs the website for a visually appealing look.
+
+### React-Slick: Dynamically presents balloon decorations with a powerful slider component.
+
+### React--hot-toast: Integrates informative and visually appealing notifications for an enhanced user experience.

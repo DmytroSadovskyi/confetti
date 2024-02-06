@@ -54,7 +54,7 @@ export const CloseButton = styled.button`
   background-color: transparent;
   border: none;
   transition: color 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
-
+  color: inherit;
   &:hover,
   &:focus {
     color: var(--accent-color);

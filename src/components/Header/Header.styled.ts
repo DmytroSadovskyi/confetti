@@ -4,14 +4,17 @@ interface MenuButtonProps {
   $scrolled: string;
 }
 
-export const PageHeader = styled.header`
+export const PageHeader = styled.header<MenuButtonProps>`
   width: 100%;
   position: fixed;
-  z-index: 100;
-  padding-top: 30px;
+  z-index: 30;
+  padding: 30px 0;
+
+  background-color: ${(props) =>
+    props.$scrolled === "true" ? "white" : "transparent"};
 
   @media screen and (min-width: 1280px) {
-    padding-top: 37px;
+    padding-top: 37px 0;
   }
 `;
 
@@ -45,6 +48,7 @@ export const MenuButton = styled.button<MenuButtonProps>`
   align-items: center;
   gap: 8px;
   background-color: transparent;
+  color: inherit;
   border: none;
   margin-left: ${(props) => (props.$scrolled ? "auto" : "0")};
   transition: color 300ms cubic-bezier(0.075, 0.82, 0.165, 1);

@@ -32,6 +32,10 @@ body {
   margin: 0 auto;
 }
 
+body.menu-open {
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,
