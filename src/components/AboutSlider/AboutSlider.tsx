@@ -1,5 +1,10 @@
-import Container from '../Container';
-import { StyledSlider, StyledCard, StyledCardTitle, StyledCardText } from './AboutSlider.styled';
+import {
+  SliderContainer,
+  StyledSlider,
+  StyledCard,
+  StyledCardTitle,
+  StyledCardText,
+} from './AboutSlider.styled';
 
 const AboutSlider = () => {
   const settings = {
@@ -11,7 +16,7 @@ const AboutSlider = () => {
     slidesToScroll: 1,
   };
   return (
-    <Container>
+    <SliderContainer>
       <StyledSlider {...settings}>
         <StyledCard id="1">
           <StyledCardTitle>Kreatywne podejście i dbałość o szczegóły</StyledCardTitle>
@@ -45,7 +50,7 @@ const AboutSlider = () => {
           </StyledCardText>
         </StyledCard>
       </StyledSlider>
-    </Container>
+    </SliderContainer>
   );
 };
 

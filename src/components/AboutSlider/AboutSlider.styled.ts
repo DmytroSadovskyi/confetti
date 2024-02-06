@@ -1,25 +1,46 @@
-import styled from "styled-components";
-import Slider from "react-slick";
+import styled from 'styled-components';
+import Slider from 'react-slick';
+
+export const SliderContainer = styled.div`
+  max-width: 100%;
+  width: 360px;
+  padding: 0;
+  margin: 0 auto;
+
+  @media screen and (min-width: 480px) {
+    padding: 0 20px;
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 0 30px;
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+  }
+`;
 export const StyledCard = styled.div`
   height: 253px;
   padding: 24px;
   color: white;
   border-radius: 24px;
 
-  ${(props) => {
+  ${props => {
     const cardId = props.id;
 
     switch (cardId) {
-      case "1":
-        return "background-color: var(--accent-color);";
-      case "2":
-        return "background-color: #222;";
-      case "3":
-        return "background-color: #444;";
-      case "4":
-        return "background-color: #808080;";
+      case '1':
+        return 'background-color: var(--accent-color);';
+      case '2':
+        return 'background-color: #222;';
+      case '3':
+        return 'background-color: #444;';
+      case '4':
+        return 'background-color: #808080;';
       default:
-        return "background-color: #999;";
+        return 'background-color: #999;';
     }
   }}
 `;
