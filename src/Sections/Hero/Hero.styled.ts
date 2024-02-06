@@ -1,7 +1,7 @@
-import styled, { keyframes } from "styled-components";
-import bg from "../../assets/images/hero-bg.png";
-import right from "../../assets/images/there-are-bunch-pink-balloons-floating-air-generative-ai2.png";
-import left from "../../assets/images/there-are-bunch-pink-balloons-floating-air-generative-ai3.png";
+import styled, { keyframes } from 'styled-components';
+import bg from '../../assets/images/hero-bg.png';
+import right from '../../assets/images/there-are-bunch-pink-balloons-floating-air-generative-ai2.png';
+import left from '../../assets/images/there-are-bunch-pink-balloons-floating-air-generative-ai3.png';
 
 const balloonAnimation = keyframes`
   0% {
