@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { Toaster, toast } from "react-hot-toast";
+import { useState } from 'react';
+import { Toaster, toast } from 'react-hot-toast';
 import {
   CustomerForm,
   FormContainer,
@@ -12,65 +12,57 @@ import {
   ErrorMessage,
   LeftBalloonWrapper,
   RightBalloonWrapper,
-} from "./Form.styled";
+} from './Form.styled';
 
 const Form = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  const [nameError, setNameError] = useState("");
-  const [emailError, setEmailError] = useState("");
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [nameError, setNameError] = useState('');
+  const [emailError, setEmailError] = useState('');
 
   const nameRegex = /^[a-zA-Z][a-zA-Z0-9_\s]*$/;
   const emailRegex = /^[\w.-]+@([\w-]+\.)+[\w-]{2,4}$/g;
 
-  const handleNameChange:
-    | React.ChangeEventHandler<HTMLInputElement>
-    | undefined = (e) => {
+  const handleNameChange: React.ChangeEventHandler<HTMLInputElement> | undefined = e => {
     setName(e.target.value);
 
     if (!nameRegex.test(e.target.value) || !e.target.value) {
-      setNameError("Nieprawidłowe Іmię");
+      setNameError('Nieprawidłowe Іmię');
     } else {
-      setNameError("");
+      setNameError('');
     }
   };
 
-  const handleEmailChange:
-    | React.ChangeEventHandler<HTMLInputElement>
-    | undefined = (e) => {
+  const handleEmailChange: React.ChangeEventHandler<HTMLInputElement> | undefined = e => {
     setEmail(e.target.value);
 
     if (!emailRegex.test(e.target.value) || !e.target.value) {
-      setEmailError("Nieprawidłowy email");
+      setEmailError('Nieprawidłowy email');
     } else {
-      setEmailError("");
+      setEmailError('');
     }
   };
 
-  const handleMessageChange:
-    | React.ChangeEventHandler<HTMLTextAreaElement>
-    | undefined = (e) => {
+  const handleMessageChange: React.ChangeEventHandler<HTMLTextAreaElement> | undefined = e => {
     setMessage(e.target.value);
   };
 
-  const handleSubmit: React.FormEventHandler<HTMLFormElement> | undefined = (
-    e
-  ) => {
+  const handleSubmit: React.FormEventHandler<HTMLFormElement> | undefined = e => {
     e.preventDefault();
 
     if (!name || !email || nameError || emailError) {
-      setNameError("Wpisz imię");
-      setEmailError("Wpisz adres e-mail");
+      setNameError('Wpisz imię');
+      setEmailError('Wpisz adres e-mail');
 
       return;
     }
 
-    setName("");
-    setEmail("");
-    setMessage("");
+    setName('');
+    setEmail('');
+    setMessage('');
 
-    toast.success("Twoje dane zostały wysłane");
+    toast.success('Twoje dane zostały wysłane');
   };
 
   return (

@@ -1,12 +1,7 @@
-import reviews from "../../reviews.json";
+import reviews from '../../reviews.json';
 
-import Review from "../Review";
-import {
-  StyledSlider,
-  SliderWrapper,
-  LeftArrow,
-  RightArrow,
-} from "./ReviewsSlider.styled";
+import Review from '../Review';
+import { StyledSlider, SliderWrapper, LeftArrow, RightArrow } from './ReviewsSlider.styled';
 
 const ReviewsSlider = () => {
   interface SampleArrowProps {
@@ -21,13 +16,13 @@ const ReviewsSlider = () => {
         className={className}
         style={{
           ...style,
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          background: "white",
-          height: "56px",
-          width: "56px",
-          cursor: "pointer",
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          background: 'white',
+          height: '56px',
+          width: '56px',
+          cursor: 'pointer',
         }}
         onClick={onClick}
       >
@@ -42,13 +37,13 @@ const ReviewsSlider = () => {
         className={className}
         style={{
           ...style,
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          background: "white",
-          height: "56px",
-          width: "56px",
-          cursor: "pointer",
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          background: 'white',
+          height: '56px',
+          width: '56px',
+          cursor: 'pointer',
         }}
         onClick={onClick}
       >
@@ -89,7 +84,7 @@ const ReviewsSlider = () => {
   return (
     <SliderWrapper>
       <StyledSlider {...settings}>
-        {reviews.map((review) => (
+        {reviews.map(review => (
           <Review key={review.id} name={review.name} review={review.review} />
         ))}
       </StyledSlider>

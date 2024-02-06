@@ -1,7 +1,7 @@
-import MailIcon from "../../assets/icons/sms.svg?react";
-import PhoneIcon from "../../assets/icons/call.svg?react";
-import Container from "../Container";
-import Form from "../Form";
+import MailIcon from '../../assets/icons/sms.svg?react';
+import PhoneIcon from '../../assets/icons/call.svg?react';
+import Container from '../Container';
+import Form from '../Form';
 import {
   ContactsSection,
   ContactsWrapper,
@@ -11,7 +11,7 @@ import {
   Phone,
   Email,
   SecondWrapper,
-} from "./Contacts.styled";
+} from './Contacts.styled';
 
 const Contacts = () => {
   return (
@@ -20,11 +20,9 @@ const Contacts = () => {
         <ContactsWrapper>
           <FirstWrapper>
             <ContactsSectionTitle>Kontakty</ContactsSectionTitle>
-            <AddressText>
-              Confetti - Studio Dekoracij Balonami Warszawa
-            </AddressText>
+            <AddressText>Confetti - Studio Dekoracij Balonami Warszawa</AddressText>
             <Phone href="tel:+48793351407">
-              {" "}
+              {' '}
               <PhoneIcon aria-label="phone-icon" /> +48 793 351 407
             </Phone>
             <Email href="mailto:confettibalony@gmail.com">

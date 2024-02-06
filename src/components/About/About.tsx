@@ -1,15 +1,9 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 
-import Container from "../Container";
-import AboutSlider from "../AboutSlider";
-import AboutList from "../AboutList";
-import {
-  AboutSection,
-  MainWrapper,
-  TextWrapper,
-  AboutTitle,
-  AboutText,
-} from "./About.styled";
+import Container from '../Container';
+import AboutSlider from '../AboutSlider';
+import AboutList from '../AboutList';
+import { AboutSection, MainWrapper, TextWrapper, AboutTitle, AboutText } from './About.styled';
 
 const About = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
@@ -19,10 +13,10 @@ const About = () => {
       setIsMobile(window.innerWidth < 768);
     };
 
-    window.addEventListener("resize", handleResize);
+    window.addEventListener('resize', handleResize);
 
     return () => {
-      window.removeEventListener("resize", handleResize);
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
 
@@ -34,8 +28,8 @@ const About = () => {
             <AboutTitle>Kreatywny zespół dekoratorów</AboutTitle>
 
             <AboutText>
-              Młodzi i energiczni, rozwijający działalność w zakresie tworzenia
-              dekoracji na imprezy i wydarzenia
+              Młodzi i energiczni, rozwijający działalność w zakresie tworzenia dekoracji na imprezy
+              i wydarzenia
             </AboutText>
           </TextWrapper>
         </MainWrapper>

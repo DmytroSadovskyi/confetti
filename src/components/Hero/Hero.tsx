@@ -1,10 +1,5 @@
-import {
-  HeroSection,
-  HeroTitle,
-  DifferentColor,
-  LeftBaloons,
-  RightBaloons,
-} from "./Hero.styled";
+import { HeroSection, HeroTitle, DifferentColor, LeftBaloons, RightBaloons } from './Hero.styled';
+
 const Hero = () => {
   return (
     <HeroSection id="hero">
