@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const ReviewWrapper = styled.div`
   height: 229px;
@@ -11,7 +11,7 @@ export const ReviewWrapper = styled.div`
   border-radius: 24px;
 
   @media screen and (min-width: 1280px) {
-    height: 220px;
+    height: 277px;
     padding: 36px 24px;
   }
 `;
@@ -24,6 +24,11 @@ export const ReviewText = styled.p`
   font-weight: 500;
   line-height: 130%;
   letter-spacing: -0.18px;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 24px;
+    letter-spacing: -0.24px;
+  }
 `;
 
 export const CustomerWrapper = styled.div`

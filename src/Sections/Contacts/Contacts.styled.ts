@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const ContactsSection = styled.section`
   margin-top: 80px;
@@ -10,7 +10,7 @@ export const ContactsSection = styled.section`
   }
 
   @media screen and (min-width: 1280px) {
-    margin-top: 200px;
+    margin-top: 130px;
     margin-bottom: 100px;
   }
 `;

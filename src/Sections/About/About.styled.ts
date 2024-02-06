@@ -1,10 +1,10 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const AboutSection = styled.section`
   margin: 50px 0 0 0;
 
   @media screen and (min-width: 1280px) {
-    margin: 78px 0 100px 0;
+    margin: 78px 0 0 0;
   }
 `;
 

@@ -29,7 +29,7 @@ export const LeftBalloonWrapper = styled.div`
     height: 469px;
     transform: rotate(-33deg);
     top: -120px;
-    left: -146px;
+    left: -164px;
   }
 `;
 
