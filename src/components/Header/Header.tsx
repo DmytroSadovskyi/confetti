@@ -5,18 +5,13 @@ import BurgerMenu from '../BurgerMenu';
 import { PageHeader, HeaderContainer, Wrapper, Logo, MenuButton } from './Header.styled';
 
 const Header = () => {
-  const body = document.body;
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
-  const handleOpen = () => {
-    setIsOpen(true);
-
-    body.classList.add('menu-open');
-  };
-  const handleClose = () => {
-    setIsOpen(false);
-    body.classList.remove('menu-open');
+  const handleToggleMenu = () => {
+    setIsOpen(prev => !prev);
+    const body = document.body;
+    body.classList.toggle('menu-open');
   };
 
   useEffect(() => {
@@ -40,17 +35,17 @@ const Header = () => {
         <Wrapper>
           {!isScrolled && (
             <Logo href="../../../index.html">
-              <LogoIcon />
+              <LogoIcon aria-label="logo" />
             </Logo>
           )}
 
-          <MenuButton type="button" onClick={handleOpen} $scrolled={isScrolled.toString()}>
+          <MenuButton type="button" onClick={handleToggleMenu} $scrolled={isScrolled.toString()}>
             {!isScrolled && <span>Menu</span>}
             <MenuIcon aria-label="menu" />
           </MenuButton>
         </Wrapper>
       </HeaderContainer>
-      {isOpen && <BurgerMenu onClose={handleClose} />}
+      {isOpen && <BurgerMenu onClose={handleToggleMenu} />}
     </PageHeader>
   );
 };

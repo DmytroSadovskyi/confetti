@@ -6,24 +6,22 @@
 }
 
 @font-face {
-  font-family: "Grotesk";
-  src: local("./assets/fonts/anzeigengrot.ttf"),
-    url("./assets/fonts/anzeigengrot.ttf");
+  font-family: 'Grotesk';
+  src: local('./assets/fonts/anzeigengrot.ttf'), url('./assets/fonts/anzeigengrot.ttf');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Inter";
-  src: local("./assets/fonts/Inter-Medium.ttf"),
-    url("./assets/fonts/Inter-Medium.ttf");
+  font-family: 'Inter';
+  src: local('./assets/fonts/Inter-Medium.ttf'), url('./assets/fonts/Inter-Medium.ttf');
   font-weight: 500;
   font-style: normal;
 }
 
 html,
 body {
-  font-family: "Grotesk";
+  font-family: 'Grotesk';
   color: var(--main-color);
   min-height: 100vh;
   max-width: 100vw;
@@ -33,7 +31,7 @@ body {
 }
 
 body.menu-open {
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 h1,

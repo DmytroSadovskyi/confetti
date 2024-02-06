@@ -8,7 +8,7 @@ const Footer = () => {
       <Container>
         <FooterWrapper>
           <a href="../../../index.html">
-            <LogoIcon />
+            <LogoIcon aria-label="logo" />
           </a>
           <Copyright>confetti © 2023</Copyright>
         </FooterWrapper>

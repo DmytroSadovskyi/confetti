@@ -30,10 +30,14 @@ const BurgerMenu = ({ onClose }: Props) => {
 
   const scrollToSection = (sectionId: string) => {
     const targetElement = document.getElementById(sectionId);
+    const header = document.getElementsByTagName('header')[0];
+    console.log(header);
+    const headerHight = header.getBoundingClientRect().height;
+
     if (targetElement) {
       onClose();
 
-      const targetOffset = targetElement.getBoundingClientRect().top + window.scrollY;
+      const targetOffset = targetElement.getBoundingClientRect().top + window.scrollY - headerHight;
       const currentScroll = window.scrollY;
       const distance = targetOffset - currentScroll;
       const duration = 500;
