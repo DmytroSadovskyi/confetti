@@ -239,7 +239,7 @@ Error generating stack: `+o.message+`
   margin: 50px 0 0 0;
 
   @media screen and (min-width: 1280px) {
-    margin: 78px 0 100px 0;
+    margin: 78px 0 0 0;
   }
 `,Oy=M.div`
   display: flex;
@@ -502,7 +502,7 @@ to {
     height: 469px;
     transform: rotate(-33deg);
     top: -120px;
-    left: -146px;
+    left: -164px;
   }
 `,_w=M.div`
   position: absolute;
@@ -684,7 +684,7 @@ to {
   }
 
   @media screen and (min-width: 1280px) {
-    margin-top: 200px;
+    margin-top: 130px;
     margin-bottom: 100px;
   }
 `,Rw=M.div`
@@ -1101,7 +1101,7 @@ to {
   border-radius: 24px;
 
   @media screen and (min-width: 1280px) {
-    height: 220px;
+    height: 277px;
     padding: 36px 24px;
   }
 `,px=M.p`
@@ -1112,6 +1112,11 @@ to {
   font-weight: 500;
   line-height: 130%;
   letter-spacing: -0.18px;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 24px;
+    letter-spacing: -0.24px;
+  }
 `,hx=M.div`
   display: flex;
   align-items: center;
