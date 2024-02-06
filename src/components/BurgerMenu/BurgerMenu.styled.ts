@@ -53,6 +53,12 @@ export const CloseButton = styled.button`
   justify-content: center;
   background-color: transparent;
   border: none;
+  transition: color 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 `;
 
 export const MobileMenu = styled.ul`
@@ -79,6 +85,13 @@ export const MobileMenuItem = styled.li`
     letter-spacing: -0.24px;
     text-transform: uppercase;
     text-decoration: none;
+
+    transition: color 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
 
     @media screen and (min-width: 768px) {
       font-size: 40px;

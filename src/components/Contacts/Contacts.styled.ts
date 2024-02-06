@@ -63,7 +63,7 @@ export const ContactsSectionTitle = styled.h2`
 
 export const AddressText = styled.p`
   margin-top: 36px;
-  padding: 0 20px;
+  padding: 0 30px;
   text-align: center;
   font-size: 28px;
   font-style: normal;
