@@ -65,7 +65,7 @@ const BurgerMenu = ({ onClose }: Props) => {
     <Backdrop>
       <Wrapper>
         <SecondWrapper>
-          <a href="../../../index.html">Confetti</a>
+          <a href="/confetti/">Confetti</a>
           <CloseButton type="button" aria-label="close-button" onClick={onClose}>
             <CloseIcon />
           </CloseButton>
