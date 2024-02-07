@@ -34,7 +34,7 @@ const Header = () => {
       <HeaderContainer>
         <Wrapper>
           {!isScrolled && (
-            <Logo href="/">
+            <Logo href="../../../index.html">
               <LogoIcon aria-label="logo" />
             </Logo>
           )}
